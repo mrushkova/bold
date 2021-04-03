@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 5.8rem;
+  text-transform: uppercase;
+  margin-bottom: 18rem;
+
+  &__logo {
+    display: flex;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+
+    &-icon {
+      width: 2.6rem;
+      height: 1.9rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &__link {
+    @include link;
+    font-weight: 400;
+    font-size: $defaul-font-size;
+    line-height: 1.7rem;
+  }
+}
+
+//   .nav.sticky {
+//     position: fixed;
+//   }
