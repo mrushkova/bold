@@ -1,0 +1,95 @@
+.technology {
+  padding-top: 8.5rem;
+  background-color: $color-white;
+
+  &__heading {
+    margin-bottom: 6rem;
+  }
+
+  &__box {
+    display: flex;
+    flex: row wrap;
+    justify-content: space-between;
+    margin-bottom: 11rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 25.5rem;
+    margin-right: 3rem;
+
+    &--1::before {
+      content: '';
+      width: 8rem;
+      height: 8rem;
+      position: absolute;
+      top: 6rem;
+      background-image: url(../img/cloud.svg);
+      background-size: 8rem 8rem;
+      background-repeat: no-repeat;
+    }
+
+    &--2::before {
+      content: '';
+      width: 7rem;
+      height: 7rem;
+      position: absolute;
+      top: 6.5rem;
+      background-image: url(../img/secure.svg);
+      background-size: 6.6rem 6.6rem;
+      background-repeat: no-repeat;
+    }
+
+    &--3::before {
+      content: '';
+      width: 7rem;
+      height: 7rem;
+      position: absolute;
+      top: 6.1rem;
+      background-image: url(../img/pdf.svg);
+      background-size: 7rem 7rem;
+      background-repeat: no-repeat;
+    }
+
+    &--4::before {
+      content: '';
+      width: 4.7rem;
+      height: 5.4rem;
+      position: absolute;
+      top: 7rem;
+      background-image: url(../img/csv.svg);
+      background-size: 4.7rem 5.4rem;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__number {
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 120px;
+    color: rgba(16, 16, 16, 0.08);
+    margin-bottom: 2rem;
+  }
+
+  &__card {
+    text-align: center;
+  }
+
+  &__subheading {
+    margin-bottom: 1.1rem;
+  }
+
+  &__text {
+    max-width: 19.5rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: $color-black;
+  }
+}

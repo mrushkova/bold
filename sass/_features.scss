@@ -1,4 +1,5 @@
 .features {
+  padding-top: 6.3rem;
   background-color: #fafafa;
 
   &__heading {
@@ -55,7 +56,7 @@
   &__text {
     font-size: 1.2rem;
     line-height: 1.8rem;
-    color: #101010;
+    color: $color-text;
     margin-bottom: 2.5rem;
   }
 
