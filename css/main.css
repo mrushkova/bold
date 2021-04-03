@@ -30,6 +30,11 @@ body {
   align-items: center;
   max-width: 111rem;
   margin: 0 auto; }
+  .container__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; }
 
 .heading-primary {
   font-family: inherit;
@@ -190,7 +195,7 @@ body {
     display: flex;
     flex: row wrap;
     justify-content: space-between;
-    margin-bottom: 11rem; }
+    margin-bottom: 13rem; }
   .technology__item {
     display: flex;
     flex-direction: column;
@@ -251,3 +256,47 @@ body {
     font-size: 1.2rem;
     line-height: 1.4rem;
     color: #000; }
+
+.focus {
+  padding: 9.5rem 0 11rem;
+  background-color: #ed4c5c;
+  color: #fff; }
+  .focus__info {
+    margin-top: 3rem;
+    max-width: 44.5rem; }
+  .focus__heading {
+    font-weight: 600;
+    margin-bottom: 4.5rem; }
+  .focus__text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: justify;
+    margin-bottom: 4rem; }
+  .focus__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 13.4rem; }
+  .focus__link:link, .focus__link:visited {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer; }
+  .focus__link:hover, .focus__link:active {
+    transform: translateY(-3px); }
+  .focus__photo-box {
+    position: relative;
+    width: 54rem;
+    z-index: 10; }
+  .focus__photo {
+    position: absolute;
+    max-width: 44.5rem;
+    object-fit: cover;
+    border-radius: 15px; }
+  .focus__photo--2, .focus__photo--3 {
+    top: 2.2rem;
+    z-index: -1; }
+  .focus__photo--2 {
+    left: -4.4rem; }
+  .focus__photo--3 {
+    right: 4.4rem; }
