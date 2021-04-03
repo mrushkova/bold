@@ -1,0 +1,68 @@
+.features {
+  background-color: #fafafa;
+
+  &__heading {
+    margin-bottom: 7.4rem;
+  }
+
+  &__box {
+    display: flex;
+    flex: row wrap;
+    margin-bottom: 21rem;
+  }
+
+  &__item {
+    width: 35rem;
+    height: 25rem;
+    border-radius: 8px;
+    margin-right: 3rem;
+    object-fit: cover;
+
+    &--1 {
+      background-image: url(../img/feature-1.png);
+    }
+
+    &--2 {
+      background-image: url(../img/feature-2.png);
+    }
+
+    &--3 {
+      background-image: url(../img/feature-3.png);
+    }
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__card {
+    width: 29.3rem;
+    height: 20rem;
+    padding: 3.5rem 2.8rem 2.5rem;
+    margin: 0 auto;
+    margin-top: 15.7rem;
+    background-color: $color-white;
+    text-align: center;
+    box-shadow: 0 0.5rem 3rem rgba($color-black, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  &__subheading {
+    margin-bottom: 1.8rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #101010;
+    margin-bottom: 2.5rem;
+  }
+
+  &__link {
+    @include link;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: $color-primary;
+  }
+}
