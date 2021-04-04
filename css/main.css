@@ -59,7 +59,6 @@ body {
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.7rem 5.2rem;
   border-radius: 6px;
   transition: all 0.2s;
   box-sizing: border-box;
@@ -94,6 +93,7 @@ body {
     text-align: center;
     margin-bottom: 5rem; }
   .header__button {
+    padding: 1.7rem 5.2rem;
     background-color: #fff;
     color: #d52047;
     border: 1px solid #fff; }
@@ -300,3 +300,50 @@ body {
     left: -4.4rem; }
   .focus__photo--3 {
     right: 4.4rem; }
+
+.contact {
+  padding: 11.7rem 0 8rem 2rem;
+  background-color: #fff; }
+  .contact__info {
+    max-width: 43.4rem; }
+  .contact__heading {
+    font-weight: 600;
+    margin-bottom: 5.5rem; }
+  .contact__text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: justify; }
+  .contact__form {
+    max-width: 54rem;
+    margin-right: 1rem;
+    box-sizing: border-box; }
+  .contact__input {
+    width: 100%;
+    padding: 2rem 3rem;
+    margin-bottom: 2.4rem;
+    font-size: 16px;
+    line-height: 19px;
+    color: #101010;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    box-sizing: border-box; }
+    .contact__input::placeholder {
+      color: rgba(19, 39, 67, 0.5); }
+    .contact__input:focus {
+      outline: transparent;
+      border: 1px solid #d52047; }
+    .contact__input--name, .contact__input--last-name {
+      width: 25.3rem; }
+    .contact__input--name {
+      margin-right: 3rem; }
+  .contact__button {
+    padding: 1.7rem 3.5rem;
+    background-color: #d52047;
+    border: 1px solid #d52047;
+    color: #fff; }
+  .contact select {
+    appearance: none;
+    background-image: url(../img/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: right 2.3rem center;
+    color: rgba(19, 39, 67, 0.5); }

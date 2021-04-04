@@ -1,0 +1,70 @@
+.contact {
+  padding: 11.7rem 0 8rem 2rem;
+  background-color: $color-white;
+
+  &__info {
+    max-width: 43.4rem;
+  }
+
+  &__heading {
+    font-weight: 600;
+    margin-bottom: 5.5rem;
+  }
+
+  &__text {
+    font-size: $defaul-font-size;
+    line-height: 2rem;
+    text-align: justify;
+  }
+
+  &__form {
+    max-width: 54rem;
+    margin-right: 1rem;
+    box-sizing: border-box;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 2rem 3rem;
+    margin-bottom: 2.4rem;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-text;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: rgba(19, 39, 67, 0.5);
+    }
+
+    &:focus {
+      outline: transparent;
+      border: 1px solid $color-primary;
+    }
+
+    &--name,
+    &--last-name {
+      width: 25.3rem;
+    }
+
+    &--name {
+      margin-right: 3rem;
+    }
+  }
+
+  &__button {
+    padding: 1.7rem 3.5rem;
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    color: $color-white;
+  }
+
+  & select {
+    appearance: none;
+    background-image: url(../img/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: right 2.3rem center;
+    color: rgba(19, 39, 67, 0.5);
+  }
+}
