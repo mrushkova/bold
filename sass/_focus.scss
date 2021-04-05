@@ -1,11 +1,22 @@
 .focus {
-  padding: 9.5rem 0 11rem;
+  padding: 9.4rem 0;
   background-color: $color-highlight;
   color: $color-white;
 
+  @include respond(laptop) {
+    padding: 6.3rem 0 5rem;
+  }
+
   &__info {
     margin-top: 3rem;
+    margin-right: 12.5rem;
     max-width: 44.5rem;
+
+    @include respond(laptop) {
+      max-width: 60%;
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
   }
 
   &__heading {
@@ -33,19 +44,24 @@
 
   &__photo-box {
     position: relative;
-    width: 54rem;
     z-index: 10;
+
+    @include respond(desktop-m) {
+      margin-right: 5rem;
+    }
+
+    @include respond(laptop) {
+      margin-right: 0;
+    }
   }
 
   &__photo {
-    position: absolute;
-    max-width: 44.5rem;
-    object-fit: cover;
     border-radius: 15px;
   }
 
   &__photo--2,
   &__photo--3 {
+    position: absolute;
     top: 2.2rem;
     z-index: -1;
   }
@@ -55,6 +71,6 @@
   }
 
   &__photo--3 {
-    right: 4.4rem;
+    right: -4.4rem;
   }
 }

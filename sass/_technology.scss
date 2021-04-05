@@ -2,15 +2,22 @@
   padding-top: 8.5rem;
   background-color: $color-white;
 
+  @include respond(laptop) {
+    padding-top: 6.3rem;
+  }
+
   &__heading {
     margin-bottom: 6rem;
   }
 
   &__box {
     display: flex;
-    flex: row wrap;
     justify-content: space-between;
     margin-bottom: 13rem;
+
+    @include respond(laptop) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__item {
@@ -20,6 +27,10 @@
     position: relative;
     width: 25.5rem;
     margin-right: 3rem;
+
+    @include respond(desktop-m) {
+      width: 25%;
+    }
 
     &--1::before {
       content: '';

@@ -8,16 +8,32 @@
 
   &__box {
     display: flex;
-    flex: row wrap;
-    margin-bottom: 21rem;
+    margin-bottom: 10.3rem;
+
+    @include respond(desktop-m) {
+      padding: 0 2rem;
+    }
+
+    @include respond(laptop) {
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0 2rem;
+      margin-bottom: 3rem;
+    }
   }
 
   &__item {
     width: 35rem;
-    height: 25rem;
+    height: 100%;
     border-radius: 8px;
     margin-right: 3rem;
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include respond(desktop-m) {
+      width: 33%;
+      margin-bottom: 3rem;
+    }
 
     &--1 {
       background-image: url(../img/feature-1.png);
@@ -37,7 +53,7 @@
   }
 
   &__card {
-    width: 29.3rem;
+    max-width: 29.3rem;
     height: 20rem;
     padding: 3.5rem 2.8rem 2.5rem;
     margin: 0 auto;
@@ -47,6 +63,15 @@
     box-shadow: 0 0.5rem 3rem rgba($color-black, 0.1);
     border-radius: 8px;
     box-sizing: border-box;
+
+    @include respond(desktop-m) {
+      max-width: 90%;
+      margin-top: 15rem;
+    }
+
+    @include respond(laptop) {
+      padding: 3rem 2rem 1rem;
+    }
   }
 
   &__subheading {
