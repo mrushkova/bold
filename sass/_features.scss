@@ -19,6 +19,11 @@
       padding: 0 2rem;
       margin-bottom: 3rem;
     }
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__item {
@@ -28,10 +33,16 @@
     margin-right: 3rem;
     background-repeat: no-repeat;
     background-size: contain;
+    background-size: 100%;
 
     @include respond(desktop-m) {
       width: 33%;
       margin-bottom: 3rem;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      margin-right: 0;
     }
 
     &--1 {
@@ -68,7 +79,7 @@
     }
 
     @include respond(laptop) {
-      padding: 3rem 2rem 1rem;
+      padding: 3rem 2rem 2rem;
     }
   }
 
@@ -81,6 +92,10 @@
     line-height: 1.8rem;
     color: $color-text;
     margin-bottom: 2.5rem;
+
+    @include respond(phone) {
+      font-size: $defaul-font-size;
+    }
   }
 
   &__link {
@@ -88,5 +103,9 @@
     font-size: 1.2rem;
     line-height: 1.8rem;
     color: $color-primary;
+
+    @include respond(phone) {
+      font-size: $defaul-font-size;
+    }
   }
 }

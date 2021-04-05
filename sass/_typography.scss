@@ -5,6 +5,18 @@
   line-height: 8.6rem;
   letter-spacing: 4px;
   text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: 5.5rem;
+  }
+
+  @include respond(phone-l) {
+    font-size: 4.5rem;
+  }
+
+  @include respond(phone-s) {
+    font-size: 4rem;
+  }
 }
 
 .heading-secondary {
@@ -12,6 +24,10 @@
   font-weight: 700;
   font-size: 3.6rem;
   line-height: 4.3rem;
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
 }
 
 .heading-tertiary {

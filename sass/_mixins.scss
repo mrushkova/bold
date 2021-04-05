@@ -1,5 +1,19 @@
 @mixin respond($breakpoint) {
-  //768px 768/16px default font size
+  //320px
+  @if $breakpoint == phone-s {
+    @media (max-width: 20em) {
+      @content;
+    }
+  }
+
+  //480px
+  @if $breakpoint == phone-l {
+    @media (max-width: 30em) {
+      @content;
+    }
+  }
+
+  //768px
   @if $breakpoint == phone {
     @media (max-width: 48em) {
       @content;

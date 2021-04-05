@@ -14,6 +14,10 @@
   &__heading {
     margin-bottom: 4rem;
     padding-left: 1rem;
+
+    @include respond(laptop) {
+      padding-left: 0;
+    }
   }
 
   &__info {
@@ -28,6 +32,10 @@
     line-height: 3.6rem;
     text-align: center;
     margin-bottom: 5rem;
+
+    @include respond(phone-l) {
+      font-size: 2rem;
+    }
   }
 
   &__button {
@@ -35,6 +43,10 @@
     background-color: $color-white;
     color: $color-primary;
     border: 1px solid $color-white;
+
+    @include respond(phone) {
+      padding: 1.5rem 4rem;
+    }
   }
 
   &__burger {
