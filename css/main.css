@@ -511,8 +511,13 @@ body {
       @media (max-width: 48em) {
         .contact__inputs--name {
           margin-right: 0; } }
+  .contact__submit {
+    display: flex;
+    align-items: center; }
   .contact__button {
+    display: inline-block;
     padding: 1.7rem 3.5rem;
+    margin-right: 2rem;
     background-color: #d52047;
     border: 1px solid #d52047;
     color: #fff; }
@@ -525,6 +530,9 @@ body {
     background-repeat: no-repeat;
     background-position: right 2.3rem center;
     color: rgba(19, 39, 67, 0.5); }
+  .contact__confirm {
+    font-size: 1.4rem;
+    color: #d52047; }
 
 .burger__button {
   background-color: rgba(213, 32, 71, 0.6);
