@@ -20,13 +20,29 @@
     }
   }
 
-  &__links {
+  &__links,
+  &__links--mobile {
     display: flex;
     list-style: none;
   }
 
+  &__links {
+    @include respond(phone) {
+      display: none;
+    }
+
+    &--mobile {
+      flex-direction: column;
+    }
+  }
+
   &__item:not(:last-child) {
     margin-right: 2rem;
+  }
+
+  &__item--mobile {
+    margin-right: 0;
+    margin-bottom: 2rem;
   }
 
   &__link {
@@ -35,5 +51,16 @@
     font-size: $defaul-font-size;
     line-height: 1.7rem;
     color: $color-white;
+  }
+
+  &__mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10rem 10rem 10rem 5rem;
+    border: 1px solid $color-white;
+    border-radius: 8px;
+    background-color: $color-highlight;
+    z-index: 20;
   }
 }

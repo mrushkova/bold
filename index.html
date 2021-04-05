@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 
     <title>Webmaster Task</title>
+    <script defer="" src="./js/script.js"></script>
   </head>
   <body>
     <header class="header">
@@ -35,7 +36,38 @@
               <a class="nav__link" href="#section--3">Sign up</a>
             </li>
           </ul>
+          <div class="nav__mobile visually-hidden">
+            <ul class="nav__links--mobile">
+              <li class="nav__item--mobile">
+                <a class="nav__link" href="#">OVERVIEW</a>
+              </li>
+              <li class="nav__item--mobile">
+                <a class="nav__link" href="#section--1">Features</a>
+              </li>
+              <li class="nav__item--mobile">
+                <a class="nav__link" href="#section--2">TECHNOLOGY</a>
+              </li>
+              <li class="nav__item--mobile">
+                <a class="nav__link" href="#section--4">CONTACT</a>
+              </li>
+              <li class="nav__item--mobile">
+                <a class="nav__link" href="#section--3">Sign up</a>
+              </li>
+            </ul>
+          </div>
         </nav>
+        <div class="header__burger burger">
+          <button class="burger__button burger__button--open" type="button" aria-label="Mobile menu button">
+            <svg class="burger__icon">
+              <use xlink:href="img/sprite.svg#menu-icon"></use>
+            </svg>
+          </button>
+          <button class="burger__button burger__button--close visually-hidden" type="button" aria-label="Close mobile menu button">
+            <svg class="burger__icon burger__icon--close">
+              <use xlink:href="img/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+        </div>
         <div class="header__info">
           <h1 class="header__heading heading-primary">CloudBudget</h1>
           <p class="header__text">
@@ -44,7 +76,9 @@
             Up to €4.99
           </p>
         </div>
-        <button class="header__button btn">Sign up</button>
+        <button class="header__button btn" aria-label="Sign up button">
+          Sign up
+        </button>
       </div>
     </header>
     <main>
@@ -192,7 +226,7 @@
                 <option value="Select Service">Select Service</option>
                 <option value="Select Service">Select Service</option>
               </select>
-              <button type="submit" class="contact__button btn">
+              <button type="submit" class="contact__button btn" aria-label="Submit form button">
                 Submit now
               </button>
             </form>
