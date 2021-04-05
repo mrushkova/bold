@@ -1,10 +1,12 @@
 'use strict';
 
+const body = document.querySelector('body');
 const burger = document.querySelector('.header__burger');
 const burgerOpen = document.querySelector('.burger__button--open');
 const burgerClose = document.querySelector('.burger__button--close');
 const menuMobile = document.querySelector('.nav__mobile');
-const body = document.querySelector('body');
+const form = document.querySelector('.contact__form');
+const submit = document.querySelector('.contact__confirm');
 
 // Mobile menu
 
@@ -14,4 +16,14 @@ burger.addEventListener('click', function (e) {
   burgerClose.classList.toggle('visually-hidden');
   menuMobile.classList.toggle('visually-hidden');
   body.classList.toggle('lock');
+});
+
+// Submit confirmation
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  submit.classList.remove('visually-hidden');
+  form.reset();
+  setTimeout(() => {
+    submit.classList.add('visually-hidden');
+  }, 2000);
 });
