@@ -42,6 +42,7 @@ gulp.task('server', function () {
 
   gulp.watch('sass/**/*.{scss,sass}', gulp.series('css', 'sass'));
   gulp.watch('img/*.svg', gulp.series('html'));
+  gulp.watch('js/*.js', gulp.series('refresh'));
   gulp.watch('*.html', gulp.series('html', 'refresh'));
 });
 

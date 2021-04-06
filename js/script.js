@@ -7,9 +7,11 @@ const burgerClose = document.querySelector('.burger__button--close');
 const menuMobile = document.querySelector('.nav__mobile');
 const form = document.querySelector('.contact__form');
 const submit = document.querySelector('.contact__confirm');
+const navMenu = document.querySelector('.nav');
+
+console.log(navMenu);
 
 // Mobile menu
-
 burger.addEventListener('click', function (e) {
   e.preventDefault();
   burgerOpen.classList.toggle('visually-hidden');
@@ -26,4 +28,15 @@ form.addEventListener('submit', function (e) {
   setTimeout(() => {
     submit.classList.add('visually-hidden');
   }, 2000);
+});
+
+// Smooth scrolling
+navMenu.addEventListener('click', function (e) {
+  e.preventDefault();
+  if (e.target.classList.contains('nav__link')) {
+    const id = e.target.getAttribute('href');
+    document.querySelector(id).scrollIntoView({
+      behavior: 'smooth',
+    });
+  }
 });
